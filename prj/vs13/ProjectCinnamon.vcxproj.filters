@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e023011e-bccf-45f4-b581-9a8a29470bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\videosource">
+      <UniqueIdentifier>{ebb68b98-7cbf-4837-8859-6613573df69e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{9c998d0e-2218-477f-ba6c-47d9e7036ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\datalistener">
+      <UniqueIdentifier>{3762ac7b-c402-4f9f-97e0-211932189e3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\videosource\VideoSource.h">
+      <Filter>src\videosource</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
