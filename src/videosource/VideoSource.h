@@ -13,11 +13,8 @@
 namespace cinnamon{
 	class VideoSource{
 	public:
-		void getFrame(Image &_image);
+		virtual void getFrame(Image &_image) = 0;
 
-
-	protected:
-		VideoSource();
 
 	};
 
