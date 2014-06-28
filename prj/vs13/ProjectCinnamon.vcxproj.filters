@@ -29,5 +29,8 @@
     <ClCompile Include="..\..\src\videosource\ffmpeg\ffmpegVideoSource.cpp">
       <Filter>src\videosource\ffmpeg</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

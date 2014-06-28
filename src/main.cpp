@@ -1,0 +1,18 @@
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+//		Project Cinnamon
+//			Author:	Carmelo J. Fdez-Agüera (a.k.a. Technik)
+//			Date:	2014-06-28
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+
+#include "videosource/ffmpeg/ffmpegVideoSource.h"
+
+using namespace cinnamon;
+
+int main(int , const char** ) {
+
+	VideoSource* src = new FFmpegVideoSource();
+	delete src;
+	return 0;
+}

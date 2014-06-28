@@ -7,8 +7,13 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 #include "ffmpegVideoSource.h"
 
-#include <libavcodec/avcodec.h>
-#include <libavformat/avformat.h>
+extern "C" {
+	#ifndef __STDC_CONSTANT_MACROS
+    #define __STDC_CONSTANT_MACROS
+	#endif
+	#include <libavcodec/avcodec.h>
+	#include <libavformat/avformat.h>
+}
 
 namespace cinnamon{
 
