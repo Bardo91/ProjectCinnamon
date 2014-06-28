@@ -21,5 +21,8 @@
     <ClInclude Include="..\..\src\videosource\VideoSource.h">
       <Filter>src\videosource</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\videosource\ffmpeg\ffmpegVideoSource.h">
+      <Filter>src\videosource\ffmpeg</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
