@@ -18,7 +18,8 @@ namespace cinnamon{
 	}
 
 	//------------------------------------------------------------------------------------------------------------------
-	bool FFmpegVideoSource::getFrame(Image &_image) {
+	bool FFmpegVideoSource::getFrame(Image &) {
+		return false;
 	}
 
 }	//	namespace cinnamon
