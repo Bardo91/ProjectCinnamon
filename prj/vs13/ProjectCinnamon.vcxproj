@@ -14,6 +14,9 @@
     <ClInclude Include="..\..\src\videosource\ffmpeg\ffmpegVideoSource.h" />
     <ClInclude Include="..\..\src\videosource\VideoSource.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\videosource\ffmpeg\ffmpegVideoSource.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0D20D706-1463-4530-8FED-36314073F5FF}</ProjectGuid>
     <RootNamespace>Project2</RootNamespace>

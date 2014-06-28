@@ -14,7 +14,7 @@ namespace cinnamon{
 
 	class Image;
 
-	class FFmpegVideoSource{
+	class FFmpegVideoSource : public VideoSource {
 	public:
 		FFmpegVideoSource();
 
