@@ -11,9 +11,13 @@
 #define _PROJECT_CINNAMON_VIDEOSOURCE_VIDEOSOURCE_H_
 
 namespace cinnamon{
+
+	class Image;
+
 	class VideoSource{
 	public:
-		virtual void getFrame(Image &_image) = 0;
+		/// Returns false if it wasn't able to retrieve a new frame
+		virtual bool getFrame(Image &_image) = 0;
 
 
 	};
