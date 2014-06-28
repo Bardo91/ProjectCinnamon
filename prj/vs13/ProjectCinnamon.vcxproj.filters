@@ -13,6 +13,9 @@
     <Filter Include="src\datalistener">
       <UniqueIdentifier>{3762ac7b-c402-4f9f-97e0-211932189e3b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\videosource\ffmpeg">
+      <UniqueIdentifier>{e913b444-bfd0-4e91-b48a-dc3728c28389}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\videosource\VideoSource.h">

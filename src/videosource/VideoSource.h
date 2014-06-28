@@ -19,7 +19,6 @@ namespace cinnamon{
 		/// Returns false if it wasn't able to retrieve a new frame
 		virtual bool getFrame(Image &_image) = 0;
 
-
 	};
 
 }	//	namespace cinnamon
