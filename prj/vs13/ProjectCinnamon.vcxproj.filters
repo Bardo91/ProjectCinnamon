@@ -16,6 +16,9 @@
     <Filter Include="src\videosource\ffmpeg">
       <UniqueIdentifier>{e913b444-bfd0-4e91-b48a-dc3728c28389}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{e7509a41-8ac2-41de-adda-9538b8063b60}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\videosource\VideoSource.h">
@@ -23,6 +26,15 @@
     </ClInclude>
     <ClInclude Include="..\..\src\videosource\ffmpeg\ffmpegVideoSource.h">
       <Filter>src\videosource\ffmpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\Image.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\Core.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\WorldUpdate.h">
+      <Filter>src\core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -32,5 +44,10 @@
     <ClCompile Include="..\..\src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\common\Image.inl">
+      <Filter>src\common</Filter>
+    </None>
   </ItemGroup>
 </Project>

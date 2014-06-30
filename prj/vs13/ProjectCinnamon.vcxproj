@@ -19,6 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\common\Image.h" />
+    <ClInclude Include="..\..\src\core\Core.h" />
+    <ClInclude Include="..\..\src\core\WorldUpdate.h" />
     <ClInclude Include="..\..\src\videosource\ffmpeg\ffmpegVideoSource.h" />
     <ClInclude Include="..\..\src\videosource\VideoSource.h" />
   </ItemGroup>
@@ -28,6 +31,9 @@
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level4</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Level4</WarningLevel>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\common\Image.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0D20D706-1463-4530-8FED-36314073F5FF}</ProjectGuid>
