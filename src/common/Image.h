@@ -21,7 +21,7 @@ namespace cinnamon{
 
 	private:
 		ChannelType_ *mPtr = nullptr;
-		int mRows = 0, mCols = 0;
+		unsigned mRows = 0, mCols = 0;
 	};
 
 }	//	namespace cinnamon
