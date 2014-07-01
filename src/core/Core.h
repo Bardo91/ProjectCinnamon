@@ -21,7 +21,7 @@ namespace cinnamon{
 		bool changeVideoSource(VideoSource *_videoSource);
 		bool step();
 
-		void registerListener(std::function<void (WorldUpdate *_worldUpdate)>);
+		void registerListener(std::function<void (const WorldUpdate *_worldUpdate)>);
 		
 	private:
 		VideoSource *mVideoSource;
