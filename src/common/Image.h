@@ -14,10 +14,10 @@ namespace cinnamon{
 	template<typename ChannelType_, unsigned nChannels_>
 	class Image{
 	public:
-		Image(const ChannelType_ *_imgBuff, int _rows, int _cols);
+		Image(const ChannelType_ *_imgBuff, unsigned _rows, unsigned _cols);
 
-		ChannelType_& operator()(int _x, int _y);
-		const ChannelType_& operator()(int _x, int _y) const;
+		ChannelType_&		operator()	(unsigned _x, unsigned _y);
+		const ChannelType_& operator()	(unsigned _x, unsigned _y) const;
 
 	private:
 		ChannelType_ *mPtr = nullptr;
