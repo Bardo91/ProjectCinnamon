@@ -18,8 +18,10 @@ namespace cinnamon{
 	public:
 		FFmpegVideoSource();
 
-		/// Returns false if it wasn't able to retrieve a new frame
-		bool getFrame(Image &_image);
+		bool openFile(const char* _fileName);
+
+		/// --- Inherited interface ----
+		bool getFrame(Image &_image); /// Returns false if it wasn't able to retrieve a new frame
 	};
 
 }	//	namespace cinnamon

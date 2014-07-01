@@ -7,12 +7,18 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 
 #include "videosource/ffmpeg/ffmpegVideoSource.h"
+#include <iostream>
 
 using namespace cinnamon;
+using namespace std;
 
-int main(int , const char** ) {
+int main(int , const char** _argv) {
 
-	VideoSource* src = new FFmpegVideoSource();
+	FFmpegVideoSource* src = new FFmpegVideoSource();
+	if(src->openFile(_argv[0]))
+		cout << "Success openning file: " << _argv[0] << endl;
+	else
+		cout << "Error opening file: " << _argv[0] << endl;
 	delete src;
 	return 0;
 }

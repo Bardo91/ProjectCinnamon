@@ -23,6 +23,15 @@ namespace cinnamon{
 	}
 
 	//------------------------------------------------------------------------------------------------------------------
+	bool FFmpegVideoSource::openFile(const char* _fileName) {
+		AVFormatContext * formatContext;
+		if(avformat_open_input(&formatContext, _fileName, nullptr, nullptr))
+			return false; // Unable to open the file
+
+		return false;
+	}
+
+	//------------------------------------------------------------------------------------------------------------------
 	bool FFmpegVideoSource::getFrame(Image &) {
 		return false;
 	}
