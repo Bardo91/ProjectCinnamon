@@ -13,17 +13,19 @@
 #include "WorldUpdate.h"
 
 #include <functional>
+#include <vector>
 
 namespace cinnamon{
 	class Core{
 	public:
 		bool changeVideoSource(VideoSource *_videoSource);
-		bool process();
+		bool step();
 
-		bool registerListener(std::function<void (WorldUpdate * _worldUpdate)>);
+		void registerListener(std::function<void (WorldUpdate *_worldUpdate)>);
 		
 	private:
 		VideoSource *mVideoSource;
+		std::vector<std::function<void(WorldUpdate *_worldUpdate)>> mListener;
 	};
 
 

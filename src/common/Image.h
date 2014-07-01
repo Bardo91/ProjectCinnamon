@@ -11,16 +11,16 @@
 
 namespace cinnamon{
 
-	template<typename type_, int rows_, int cols_>
+	template<typename type_, int noChannels_>
 	class Image{
 	public:
-		Image(const type_ *_imgPtr);
+		Image(const type_ *_imgPtr, const int _rows, const int _cols);
 
-		type_* getPointer();
 		type_& operator()(const int _x,const int _y);
 
 	private:
-		type_ mPtr[rows_ * cols_];
+		type_ *mPtr = nullptr;
+		int mRows = 0, mCols = 0;
 	};
 
 
