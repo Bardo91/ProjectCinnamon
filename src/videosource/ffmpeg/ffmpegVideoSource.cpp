@@ -5,7 +5,7 @@
 //			Date:	2014-06-28
 //
 /////////////////////////////////////////////////////////////////////////////////////////
-#include "ffmpegVideoSource.h"
+#include "FFmpegVideoSource.h"
 
 extern "C" {
 	#ifndef __STDC_CONSTANT_MACROS

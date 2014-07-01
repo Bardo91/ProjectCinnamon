@@ -24,6 +24,6 @@ namespace cinnamon{
 		bool getFrame(Image &_image); /// Returns false if it wasn't able to retrieve a new frame
 	};
 
-}	//	namespace cinnamon
+}	// namespace cinnamon
 
 #endif	// _PROJECT_CINNAMON_VIDEOSOURCE_FFMPEG_FFMPEGVIDEOSOURCE_H_

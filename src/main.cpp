@@ -6,7 +6,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////
 
-#include "videosource/ffmpeg/ffmpegVideoSource.h"
+#include "videosource/ffmpeg/FFmpegVideoSource.h"
 #include <iostream>
 
 using namespace cinnamon;
