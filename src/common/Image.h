@@ -11,20 +11,21 @@
 
 namespace cinnamon{
 
-	template<typename type_, int noChannels_>
+	template<typename ChannelType_, unsigned nChannels_>
 	class Image{
 	public:
-		Image(const type_ *_imgPtr, const int _rows, const int _cols);
+		Image(const ChannelType_ *_imgBuff, int _rows, int _cols);
 
-		type_& operator()(const int _x,const int _y);
+		ChannelType_& operator()(int _x, int _y);
+		const ChannelType_& operator()(int _x, int _y) const;
 
 	private:
-		type_ *mPtr = nullptr;
+		ChannelType_ *mPtr = nullptr;
 		int mRows = 0, mCols = 0;
 	};
 
-
-
 }	//	namespace cinnamon
+
+#include"Image.inl"
 
 #endif	// _PROJECT_CINNAMON_COMMON_IMAGE_H_
