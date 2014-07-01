@@ -18,14 +18,16 @@
 namespace cinnamon{
 	class Core{
 	public:
+		typedef std::function<void (const WorldUpdate*)> DataListener;
+
 		bool changeVideoSource(VideoSource *_videoSource);
 		bool step();
 
-		void registerListener(std::function<void (const WorldUpdate *_worldUpdate)>);
+		void registerListener(DataListener);
 		
 	private:
 		VideoSource *mVideoSource;
-		std::vector<std::function<void(WorldUpdate *_worldUpdate)>> mListener;
+		std::vector<DataListener> mListener;
 	};
 
 
